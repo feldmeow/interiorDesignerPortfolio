@@ -1,0 +1,53 @@
+.header
+  padding-top: 40px
+  position: relative
+  min-height: 800px
+  background: rgba(0, 0, 0, 0.25)
+  background-repeat: no-repeat
+  &__top
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__logo
+    display: block
+    height: 100px
+  &::after
+    content: ""
+    background: url(../img/main.jpg) no-repeat
+    background-size: cover
+    background-position: center
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    height: 100%
+    width: 100%
+    z-index: -1
+    filter: grayscale(43%)
+  &__container
+    display: flex
+    flex-direction: column
+
+.nav
+  display: flex
+  justify-content: space-between
+  &__item
+    list-style-type: none
+  &__link
+    color: #FFF
+    font-family: Poppins
+    font-size: 18px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+
+.info
+  &__text
+    text-align: center
+    display: block
+    color: #FFF
+    font-family: 'Comfortaa', cursive
+    font-size: 158px
+    font-style: normal
+    font-weight: 400
+    letter-spacing: 40px
